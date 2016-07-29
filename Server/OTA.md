@@ -33,7 +33,9 @@
 
 rebooting()
 {
-	dialog --title " Rebooting... " --nocancel --pause "" 8 41 1
+
+dialog --title " Rebooting... " --nocancel --pause "" 8 41 1
+		
 		sync
 			umount -a
 				reboot -f
