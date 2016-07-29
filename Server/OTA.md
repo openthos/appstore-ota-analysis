@@ -177,7 +177,7 @@ update_to(){
 		for f in *; do
 			[ -d $f ] || chmod 644 $f
 		done
-
+	fi
 		#ln -s ../data ./data
 		#cp data目录到upgrade目录下，保存用户资料
 		cp -af ../data ./
