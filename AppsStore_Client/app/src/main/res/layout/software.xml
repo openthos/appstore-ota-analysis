@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="45dp" >
+    
+     <RelativeLayout
+        android:id="@+id/rl_daohang"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#d000"
+       android:gravity="center_vertical">
+        
+        <TextView
+            android:text="应用软件"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+           
+        />
+        <ImageView
+            android:id="@+id/daohang_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_menu_search"
+        />
+        
+    </RelativeLayout>
+    
+     
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical">"
+     <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical">"
+     
+     
+   <!-- <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/soft_for_man"
+            android:text="男性专属"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="3dp"
+            android:gravity="center"
+            android:background="@drawable/bg_cont1"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:drawableLeft="@drawable/man"
+            />
+        <TextView
+            android:id="@+id/soft_for_woman"
+            android:text="女性专属"
+            android:background="@drawable/bg_cont1"
+            android:layout_marginTop="5dp"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:drawableLeft="@drawable/girl"
+            />
+    </LinearLayout>-->
+    
+    <LinearLayout
+        android:id="@+id/soft_for_sys"
+        style="@style/soft_linear">
+        <ImageView
+            style="@style/soft_img"
+            android:src="@drawable/sys"/>
+        <LinearLayout
+            style="@style/soft_class_linear">
+            <TextView
+                android:text="系统输入"
+                style="@style/soft_class_tv"
+            />
+            <TextView
+                android:text="@string/system_input"
+                style="@style/soft_tv"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:id="@+id/soft_for_chat"
+        style="@style/soft_linear">
+        <ImageView
+            style="@style/soft_img"
+            android:src="@drawable/chat" />
+        <LinearLayout
+            style="@style/soft_class_linear">
+            <TextView
+                android:text="聊天通讯"
+                style="@style/soft_class_tv"
+            />
+            <TextView
+                android:text="@string/chat_tool"
+                style="@style/soft_tv"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    
+<LinearLayout
+        android:id="@+id/soft_for_movie"
+        style="@style/soft_linear">
+        <ImageView
+            style="@style/soft_img"
+            android:src="@drawable/video"/>
+
+
+
+    <LinearLayout
+            style="@style/soft_class_linear">
+            <TextView
+                android:text="影音图像"
+                style="@style/soft_class_tv"
+            />
+            <TextView
+                android:text="@string/video_img"
+                style="@style/soft_tv"
+             />
+        </LinearLayout>
+    </LinearLayout>
+    
+
+<LinearLayout
+        android:id="@+id/soft_for_read"
+        style="@style/soft_linear">
+        <ImageView
+            style="@style/soft_img"
+            android:src="@drawable/study"/>
+        <LinearLayout
+            style="@style/soft_class_linear">
+            <TextView
+                android:text="阅读学习"
+                style="@style/soft_class_tv"
+            />
+            <TextView
+                android:text="@string/read_study"
+                style="@style/soft_tv"
+             />
+        </LinearLayout>
+    </LinearLayout>
+    
+<LinearLayout
+        android:id="@+id/soft_for_map"
+        style="@style/soft_linear">
+        <ImageView
+            style="@style/soft_img"
+            android:src="@drawable/map"/>
+        <LinearLayout
+            style="@style/soft_class_linear">
+            <TextView
+                android:text="生活地图"
+                style="@style/soft_class_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="@string/life_map"
+                style="@style/soft_tv"
+             />
+        </LinearLayout>
+    </LinearLayout>
+        
+
+
+<LinearLayout
+        android:id="@+id/soft_for_theame"
+        style="@style/soft_linear">
+        <ImageView
+            style="@style/soft_img"
+            android:src="@drawable/theame"/>
+        <LinearLayout
+            style="@style/soft_class_linear">
+            <TextView
+                android:text="壁纸主题"
+                style="@style/soft_class_tv"
+            />
+            <TextView
+                android:text="@string/theme"
+                style="@style/soft_tv"
+             />
+        </LinearLayout>
+    </LinearLayout>
+        
+<LinearLayout
+         android:id="@+id/soft_for_out"
+        style="@style/soft_linear">
+        <ImageView
+            style="@style/soft_img"
+            android:src="@drawable/out"/>
+        <LinearLayout
+            style="@style/soft_class_linear">
+            <TextView
+                android:text="出行必用"
+                style="@style/soft_class_tv"
+            />
+            <TextView
+                android:text="@string/chuxing"
+                style="@style/soft_tv"
+             />
+        </LinearLayout>
+    </LinearLayout>
+        
+<LinearLayout
+        android:id="@+id/soft_for_tool"
+        style="@style/soft_linear">
+        <ImageView
+            style="@style/soft_img"
+            android:src="@drawable/tool"/>
+        <LinearLayout
+            style="@style/soft_class_linear">
+            <TextView
+                android:text="实用工具"
+                style="@style/soft_class_tv"
+            />
+            <TextView
+                android:text="@string/shiyong_tool"
+                style="@style/soft_tv"
+             />
+        </LinearLayout>
+    </LinearLayout>
+        
+
+<LinearLayout
+        android:id="@+id/soft_for_office"
+        style="@style/soft_linear">
+        <ImageView
+            style="@style/soft_img"
+            android:src="@drawable/office"/>
+        <LinearLayout
+            style="@style/soft_class_linear">
+            <TextView
+                android:text="办公商务"
+                style="@style/soft_class_tv"
+            />
+            <TextView
+                android:text="@string/office"
+                style="@style/soft_tv"
+             />
+        </LinearLayout>
+    </LinearLayout>
+        
+<LinearLayout
+        android:id="@+id/soft_for_children"
+        style="@style/soft_linear">
+        <ImageView
+            style="@style/soft_img"
+            android:src="@drawable/children"/>
+        <LinearLayout
+            style="@style/soft_class_linear">
+            <TextView
+                android:text="儿童亲子"
+                style="@style/soft_class_tv"
+            />
+            <TextView
+                android:text="@string/children"
+                style="@style/soft_tv"
+             />
+        </LinearLayout>
+    </LinearLayout>
+        
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

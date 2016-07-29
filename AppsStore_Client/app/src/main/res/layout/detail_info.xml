@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <RelativeLayout
+        android:id="@+id/rl_daohang"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#d000"
+       android:gravity="center_vertical">
+        
+        <TextView
+            android:id="@+id/detail_soft_name"
+            android:text="个性"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+           
+        />
+        <ImageView
+            android:id="@+id/daohang_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_menu_search"
+        />
+        
+    </RelativeLayout>
+    <Button
+        android:id="@+id/app_download"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="下载"
+        android:layout_alignParentBottom="true"
+        />
+    <ScrollView
+        android:id="@+id/just_sc"
+        android:layout_below="@id/rl_daohang"
+        android:layout_width="match_parent"
+
+        android:fillViewport="true"
+
+        android:layout_above="@id/app_download"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:id="@+id/xidui"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_cont1"
+        android:gravity="center_horizontal"
+          >
+
+        <ImageView
+            android:id="@+id/soft_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_launcher" />
+
+        <LinearLayout
+            android:layout_toRightOf="@id/soft_img"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:orientation="vertical"    >
+
+            <TextView
+                android:id="@+id/soft_private_name"
+                android:layout_marginTop="4dp"
+                android:layout_height="0dp"
+                android:layout_width="wrap_content"
+               android:layout_weight="1"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:text="愤怒的小鸟"/>
+            <TextView
+                android:id="@+id/soft_private_daxiao"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+               android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="18.4m" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评论"
+            android:textColor="#ECFBFD"
+            android:background="#6081e2"
+            android:layout_alignParentRight="true"
+
+            android:layout_margin="9dp"
+            android:padding="3dp"
+             />
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_pb"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:layout_height="140dp" >
+
+        <ProgressBar
+            android:id= "@+id/pb_load"
+        android:layout_width="wrap_content"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+          />
+    </RelativeLayout>
+
+    <Gallery
+        android:visibility="gone"
+        android:id="@+id/gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="140dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:background="@drawable/bg_cont1">
+
+        <TextView
+            android:id="@+id/tv_soft_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="版本：2.13.06"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="6dp"
+            android:textSize="15sp"
+        />
+        <TextView
+            android:textSize="15sp"
+            android:id="@+id/tv_soft_download_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下载：600万次"
+            android:gravity="right"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@id/tv_soft_version"
+            android:layout_alignBottom="@id/tv_soft_version"
+        />
+        <TextView
+            android:id="@+id/tv_soft_language"
+            android:layout_below="@id/tv_soft_version"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_soft_version"
+            android:text="语言：简体中文"
+            android:layout_marginTop="5dp"
+        />
+        <TextView
+            android:id="@+id/tv_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:gravity="bottom"
+            android:layout_below="@id/tv_soft_download_count"
+            android:text="更新：2013-11-06"
+            android:layout_alignBottom="@id/tv_soft_language"
+            android:layout_alignLeft="@id/tv_soft_download_count"
+        />
+        <TextView
+            android:id="@+id/tv_auther"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_below="@id/tv_soft_language"
+            android:layout_alignLeft="@id/tv_soft_language"
+             android:layout_marginTop="5dp"
+            android:text="作者：向洪材"
+        />
+        <TextView
+            android:id="@+id/tv_line"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_margin="3dp"
+            android:background="#B7B7B7"
+            android:layout_below="@id/tv_auther"
+
+        />
+        <TextView
+            android:id="@+id/tv_introduce"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_below="@id/tv_auther"
+            android:text="   我就是为了写点字我就是为了写点字我就是为了写点字我就是为了写点字我就是为了写点字我就是为了写点字我就是为了写点字我就是为了写点字"
+            android:textColor="#000000"
+            />
+    </RelativeLayout>
+   <!-- <Button
+        android:id="@+id/bt_other_product"
+        android:layout_marginTop="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="作者其他作品"
+        android:background="@drawable/bg_cont2_rightallow"
+        />-->
+      <TextView
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:text="用户评论:"
+          android:gravity="left"
+          />
+      <!--<ProgressBar
+        android:id="@+id/pb"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />-->
+
+        <ListView
+          android:id="@+id/comment"
+          android:layout_width="fill_parent"
+          android:layout_height="0dp"
+            android:layout_weight="1"
+
+
+          />
+
+    </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+

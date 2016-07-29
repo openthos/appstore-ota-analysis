@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <color name="black">#000000</color>
+    <color name="common_action_bar_splitter">#d2d2d2</color>
+    <color name="common_signin_btn_dark_text_default">@android:color/white</color>
+    <color name="common_signin_btn_dark_text_disabled">#FFAAAAAA</color>
+    <color name="common_signin_btn_dark_text_focused">@android:color/white</color>
+    <color name="common_signin_btn_dark_text_pressed">@android:color/white</color>
+    <color name="common_signin_btn_default_background">#FFDD4B39</color>
+    <color name="common_signin_btn_light_text_default">#FF737373</color>
+    <color name="common_signin_btn_light_text_disabled">#FFAAAAAA</color>
+    <color name="common_signin_btn_light_text_focused">#FF737373</color>
+    <color name="common_signin_btn_light_text_pressed">@android:color/white</color>
+    <color name="white">#ffffff</color>
+    <declare-styleable name="LoadingImageView"><attr format="enum" name="imageAspectRatioAdjust"><enum name="none" value="0"/><enum name="adjust_width" value="1"/><enum name="adjust_height" value="2"/></attr><attr format="float" name="imageAspectRatio"/><attr format="boolean" name="circleCrop"/></declare-styleable>
+    <dimen name="bottom_tab_font_size">10.0dip</dimen>
+    <dimen name="bottom_tab_padding_drawable">2.0dip</dimen>
+    <dimen name="bottom_tab_padding_up">2.0dip</dimen>
+    <dimen name="button_height">45.0dip</dimen>
+    <dimen name="switch_logo_bottom_padding">30.0sp</dimen>
+    <integer name="google_play_services_version">8115000</integer>
+    <string name="alarm">闹钟</string>
+    <string name="app_name">应用商店</string>
+    <string name="auth_google_play_services_client_facebook_display_name">Facebook</string>
+    <string name="auth_google_play_services_client_google_display_name">Google</string>
+    <string name="chat_tool">聊天  微薄  交友  社交  通讯录  通话  语音  短信  表情  婚恋  来电秀  </string>
+    <string name="children">故事  儿歌  益智  育儿  怀孕  亲子  学前</string>
+    <string name="chuxing">旅游  机票  酒店  火车票  导航  地图  天气  </string>
+    <string name="common_android_wear_notification_needs_update_text"><ns1:g id="app_name">%1$s</ns1:g> requires an update to the Android Wear app.</string>
+    <string name="common_android_wear_update_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t run unless you update the Android Wear app.</string>
+    <string msgid="6006316683626838685" name="common_android_wear_update_title">Update Android Wear</string>
+    <string name="common_google_play_services_api_unavailable_text"><ns1:g id="app_name">%1$s</ns1:g> requires one or more Google Play services that are not currently available. Please contact the developer for assistance.</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable Google Play services</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t work unless you enable Google Play services.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Enable Google Play services</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Requested by <ns1:g id="app_name">%1$s</ns1:g></string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">Get Google Play services</string>
+    <string msgid="2122112764540849864" name="common_google_play_services_install_text_phone"><ns1:g id="app_name">%1$s</ns1:g> won\'t run without Google Play services, which are missing from your phone.</string>
+    <string msgid="7351599665250191022" name="common_google_play_services_install_text_tablet"><ns1:g id="app_name">%1$s</ns1:g> won\'t run without Google Play services, which are missing from your tablet.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Get Google Play services</string>
+    <string name="common_google_play_services_invalid_account_text">The specified account does not exist on this device. Please choose a different account.</string>
+    <string name="common_google_play_services_invalid_account_title">Invalid Account</string>
+    <string name="common_google_play_services_needs_enabling_title">An application requires Google Play services to be enabled.</string>
+    <string name="common_google_play_services_network_error_text">A data connection is required to connect to Google Play services.</string>
+    <string name="common_google_play_services_network_error_title">Network Error</string>
+    <string name="common_google_play_services_notification_needs_update_title">An application requires an update for Google Play services.</string>
+    <string name="common_google_play_services_notification_ticker">Google Play services error</string>
+    <string name="common_google_play_services_sign_in_failed_text">Error signing in the specified account. Please choose a different account.</string>
+    <string name="common_google_play_services_sign_in_failed_title">Sign in failed</string>
+    <string name="common_google_play_services_unknown_issue">Unknown issue with Google Play services.</string>
+    <string name="common_google_play_services_unsupported_text"><ns1:g id="app_name">%1$s</ns1:g> relies on Google Play services, which is not supported by your device. Contact the manufacturer for assistance.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play services</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">Update</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t run unless you update Google Play services.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Update Google Play services</string>
+    <string name="common_google_play_services_updating_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t run without Google Play services, which are currently updating.</string>
+    <string name="common_google_play_services_updating_title">Google Play services are updating</string>
+    <string name="common_open_on_phone">Open on phone</string>
+    <string name="game_baoli">死亡扳机2  变脸僵尸  雪饮狂刀  死亡空间  死亡绝境</string>
+    <string name="game_dongzuo">暗影格斗  生存战争  疯狂喷气机  火箭飞人</string>
+    <string name="game_feixing">雷电2016  时空猎人  高达战争  雷电决战星河</string>
+    <string name="game_gedou">KOF  街霸  侍魂  格斗之王  格斗兄弟  拳击挑战赛</string>
+    <string name="game_juese">新征途  亡灵杀手  乱斗西游  去吧皮卡丘  少年三国志</string>
+    <string name="game_linglei">越消越疯狂  混沌之理 大便超人  天天炫舞</string>
+    <string name="game_mishi">上帝密室  最后一扇门  逃出房间  360度房间</string>
+    <string name="game_paoku">神庙逃亡  地铁跑酷  险境逃脱  矢量跑酷  矿车大逃亡</string>
+    <string name="game_qipai">皇冠麻将  QQ斗地主  博雅中国象棋  多乐跑得快  途游五子棋</string>
+    <string name="game_tiyu">手指网球  手指高尔夫  足球射门  全明星篮球赛 </string>
+    <string name="game_wangluo">龙翼编年史  掌上英雄联盟  萌宠大乱斗  众将听令 </string>
+    <string name="game_xiuxian">植物大战僵尸  愤怒的小鸟  保卫家园   快乐牛牛</string>
+    <string name="life_map">天气  日历  地图  导航  旅游  购物  美食  团购  ktv 闹钟  段子  </string>
+    <string name="message">信息</string>
+    <string name="music">音乐</string>
+    <string name="office">效率办公  记事  理财  云盘  名片  文档  邮箱  </string>
+    <string name="photo">图片</string>
+    <string name="read_study">图书  新闻  漫画  阅读器  小说  听书  杂志  学习  翻译  考试  英语  </string>
+    <string name="setting">设置</string>
+    <string name="shiyong_tool">闹钟  计算器  手电筒  指南针  翻译  倒计时  快递  </string>
+    <string name="system_input">安全  输入法  浏览器 字体  系统  优化  加密  </string>
+    <string name="theme">主题  桌面  壁纸  动态  锁屏  iphone 美女  卡通  风景  可爱  小清新  </string>
+    <string name="video_img">视频  音乐  播放器  拍照  相机  美化  滤镜  特效  自拍  拼图  电影  </string>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="linear_includethree">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">1dp</item>
+          <item name="android:layout_marginLeft">7dp</item>
+            <item name="android:layout_marginRight">7dp</item>
+       </style>
+    <style name="linear_two">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+       </style>
+    <style name="main_tab_bottom">
+                <item name="android:textColor">#ffffffff</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_horizontal</item>  
+       
+        
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>  
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">@dimen/bottom_tab_padding_drawable</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="notitle">
+<item name="android:windowNoTitle">true</item> 
+</style>
+    <style name="soft_class_linear">
+           <item name="android:layout_width">fill_parent</item>
+           <item name="android:layout_height">wrap_content</item>
+           <item name="android:orientation">vertical</item>
+       </style>
+    <style name="soft_class_tv">
+           <item name="android:layout_width">fill_parent</item>
+           <item name="android:layout_height">wrap_content</item>
+           <item name="android:textSize">15sp</item>
+           <item name="android:layout_margin">5dp</item>
+           
+      </style>
+    <style name="soft_img">  
+           <item name="android:layout_width">60dp</item>
+           <item name="android:layout_height">60dp</item>
+           <item name="android:layout_margin">5dp</item>
+       </style>
+    <style name="soft_linear">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/bg_cont1</item>
+       </style>
+    <style name="soft_tv">
+           <item name="android:layout_width">fill_parent</item>
+           <item name="android:layout_height">wrap_content</item>
+           <item name="android:textSize">13sp</item>
+           <item name="android:textColor">#AAAAAA</item>
+           <item name="android:layout_marginRight">4dp</item>
+      </style>
+    <style name="text_bigone">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textColor">#D1F9FF</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        
+    </style>
+    <style name="text_smallone">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:textColor">#A5A2FF</item>
+         <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        
+    </style>
+    <style name="xhc_radiobutton">
+       <item name="android:ellipsize">marquee</item>
+       <item name="android:singleLine">true</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">@drawable/home_btn_bg_s</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:drawablePadding">2.0dp</item>  
+        <item name="android:gravity">center_horizontal</item>  
+     </style>
+</resources>

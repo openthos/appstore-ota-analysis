@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/Ll_who"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:background="@drawable/bg_cont1">
+
+
+	<ImageView
+		android:id="@+id/soft_image"
+		android:layout_width="50dp"
+		android:layout_height="50dp"
+
+		android:layout_marginLeft="5dp"
+		android:layout_weight="1"
+		android:src="@drawable/ic_launcher" />
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_weight="3"
+		android:layout_marginLeft="5dp">
+
+		<TextView
+			android:id="@+id/soft_name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="帅哥软件"
+			android:singleLine="true"
+			android:ems="6"
+			android:textSize="18sp" />
+
+		<TextView
+			android:id="@+id/soft_jianjie"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/soft_name"
+			android:layout_marginTop="4dp"
+			android:layout_toRightOf="@id/soft_image"
+			android:ems="7"
+			android:maxLines="3"
+			android:textSize="10sp" />
+		<ProgressBar
+			android:id="@+id/pb_downloading"
+			android:layout_width="fill_parent"
+			android:layout_height="2dp"
+			style="?android:attr/progressBarStyleHorizontal"
+
+			android:max="1000"
+
+			/>
+
+
+
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_weight="2"
+		android:layout_marginLeft="5dp">
+		<TextView
+			android:id="@+id/soft_daxiao"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="4dp"
+			android:text="10.8m" />
+
+		<TextView
+			android:id="@+id/soft_download_count"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="10万次下载" />
+		<TextView
+			android:id="@+id/down_jindu"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/soft_download_count"
+			android:layout_marginTop="2dp"
+			android:layout_toRightOf="@id/soft_image"
+			android:ems="7"
+			android:text="10%"
+			android:textSize="10sp" />
+
+	</LinearLayout>
+	<ImageView
+		android:id="@+id/fengexian"
+		android:layout_width="5dp"
+		android:layout_marginLeft="5dp"
+		android:layout_height="fill_parent"
+
+		android:src="@drawable/tab_line" />
+
+	<Button
+		android:id="@+id/img_download"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:text="下载"
+		android:gravity="center"/>
+	<!--<ImageView-->
+	<!---->
+	<!--android:layout_weight="2"-->
+	<!--android:id="@+id/img_download"-->
+	<!--android:layout_marginTop="5dp"-->
+	<!--android:layout_width="45dp"-->
+	<!--android:layout_height="wrap_content"-->
+	<!--android:src="@drawable/ic_pulltorefresh_arrow"-->
+	<!--/>-->
+
+
+</LinearLayout>

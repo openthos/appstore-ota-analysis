@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="45dp" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#d000"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:text="游戏"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+
+            />
+        <ImageView
+            android:id="@+id/daohang_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_menu_search"
+            />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbarFadeDuration="0"
+        android:fadingEdge="none"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/tv_game_gedou"
+                style="@style/soft_linear">
+                <ImageView
+                    style="@style/soft_img"
+                    android:src="@drawable/gedouyouxi"/>
+                <LinearLayout
+                    style="@style/soft_class_linear">
+                    <TextView
+                        android:text="格斗游戏"
+                        style="@style/soft_class_tv"
+                        />
+                    <TextView
+                        android:text="@string/game_gedou"
+                        style="@style/soft_tv"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/xiuxian"
+                style="@style/soft_linear">
+                <ImageView
+                    style="@style/soft_img"
+                    android:src="@drawable/xiuxianyouxi"/>
+                <LinearLayout
+                    style="@style/soft_class_linear">
+                    <TextView
+                        android:text="休闲游戏"
+                        style="@style/soft_class_tv"
+                        />
+                    <TextView
+                        android:text="@string/game_xiuxian"
+                        style="@style/soft_tv"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/action"
+                style="@style/soft_linear">
+                <ImageView
+                    style="@style/soft_img"
+                    android:src="@drawable/dongzuomaoxian"/>
+                <LinearLayout
+                    style="@style/soft_class_linear">
+                    <TextView
+                        android:text="动作冒险"
+                        style="@style/soft_class_tv"
+                        />
+                    <TextView
+                        android:text="@string/game_dongzuo"
+                        style="@style/soft_tv"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pe"
+                style="@style/soft_linear">
+                <ImageView
+                    style="@style/soft_img"
+                    android:src="@drawable/tiyujingji"/>
+                <LinearLayout
+                    style="@style/soft_class_linear">
+                    <TextView
+                        android:text="体育竞速"
+                        style="@style/soft_class_tv"
+                        />
+                    <TextView
+                        android:text="@string/game_tiyu"
+                        style="@style/soft_tv"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--        ****************************************************************************************************************** -->
+            <LinearLayout
+                android:id="@+id/net_game"
+                style="@style/soft_linear">
+                <ImageView
+                    style="@style/soft_img"
+                    android:src="@drawable/wangluoyouxi"/>
+                <LinearLayout
+                    style="@style/soft_class_linear">
+                    <TextView
+                        android:text="网络游戏"
+                        style="@style/soft_class_tv"
+                        />
+                    <TextView
+                        android:text="@string/game_wangluo"
+                        style="@style/soft_tv"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/fly_shoot"
+                style="@style/soft_linear">
+                <ImageView
+                    style="@style/soft_img"
+                    android:src="@drawable/feixingsheji"/>
+                <LinearLayout
+                    style="@style/soft_class_linear">
+                    <TextView
+                        android:text="飞行射击"
+                        style="@style/soft_class_tv"
+                        />
+                    <TextView
+                        android:text="@string/game_feixing"
+                        style="@style/soft_tv"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/card_game"
+                style="@style/soft_linear">
+                <ImageView
+                    style="@style/soft_img"
+                    android:src="@drawable/qipaitiandi"/>
+                <LinearLayout
+                    style="@style/soft_class_linear">
+                    <TextView
+                        android:text="棋牌天地"
+                        style="@style/soft_class_tv"
+                        />
+                    <TextView
+                        android:text="@string/game_qipai"
+                        style="@style/soft_tv"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--        ****************************************************************************************************************** -->
+            <LinearLayout
+                android:id="@+id/jiaose"
+                style="@style/soft_linear">
+                <ImageView
+                    style="@style/soft_img"
+                    android:src="@drawable/juesebanyan"/>
+                <LinearLayout
+                    style="@style/soft_class_linear">
+                    <TextView
+                        android:text="角色扮演"
+                        style="@style/soft_class_tv"
+                        />
+                    <TextView
+                        android:text="@string/game_juese"
+                        style="@style/soft_tv"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/baoli"
+                style="@style/soft_linear">
+                <ImageView
+                    style="@style/soft_img"
+                    android:src="@drawable/baolifaxie"/>
+                <LinearLayout
+                    style="@style/soft_class_linear">
+                    <TextView
+                        android:text="暴力发泄"
+                        style="@style/soft_class_tv"
+                        />
+                    <TextView
+                        android:text="@string/game_baoli"
+                        style="@style/soft_tv"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/run"
+                style="@style/soft_linear">
+                <ImageView
+                    style="@style/soft_img"
+                    android:src="@drawable/paokukuangben"/>
+                <LinearLayout
+                    style="@style/soft_class_linear">
+                    <TextView
+                        android:text="跑酷狂奔"
+                        style="@style/soft_class_tv"
+                        />
+                    <TextView
+                        android:text="@string/game_paoku"
+                        style="@style/soft_tv"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--        ****************************************************************************************************************** -->
+
+
+            <!--        ****************************************************************************************************************** -->
+
+            <!--        ****************************************************************************************************************** -->
+
+            <LinearLayout
+                android:id="@+id/jiemi"
+                style="@style/soft_linear">
+                <ImageView
+                    style="@style/soft_img"
+                    android:src="@drawable/mishijiemi"/>
+                <LinearLayout
+                    style="@style/soft_class_linear">
+                    <TextView
+                        android:text="密室解密"
+                        style="@style/soft_class_tv"
+                        />
+                    <TextView
+                        android:text="@string/game_mishi"
+                        style="@style/soft_tv"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/zhongkou"
+                style="@style/soft_linear">
+                <ImageView
+                    style="@style/soft_img"
+                    android:src="@drawable/lingleikouwei"/>
+                <LinearLayout
+                    style="@style/soft_class_linear">
+                    <TextView
+                        android:text="另类重口"
+                        style="@style/soft_class_tv"
+                        />
+                    <TextView
+                        android:text="@string/game_linglei"
+                        style="@style/soft_tv"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

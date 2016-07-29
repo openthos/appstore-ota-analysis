@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"> 
+        <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+<style name="notitle">
+<item name="android:windowNoTitle">true</item> 
+</style>
+    <style name="main_tab_bottom">
+                <item name="android:textColor">#ffffffff</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_horizontal</item>  
+       
+        
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>  
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">@dimen/bottom_tab_padding_drawable</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="xhc_radiobutton">
+       <item name="android:ellipsize">marquee</item>
+       <item name="android:singleLine">true</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">@drawable/home_btn_bg_s</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:drawablePadding">2.0dp</item>  
+        <item name="android:gravity">center_horizontal</item>  
+     </style>
+     
+    <style
+        name="text_bigone">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textColor">#D1F9FF</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        
+    </style>
+      <style
+        name="text_smallone">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:textColor">#A5A2FF</item>
+         <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        
+    </style>
+    <style
+        name="linear_includethree">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">1dp</item>
+          <item name="android:layout_marginLeft">7dp</item>
+            <item name="android:layout_marginRight">7dp</item>
+       </style>   
+       <style
+        name="linear_two">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+       </style>   
+       
+       <style name="soft_linear">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/bg_cont1</item>
+       </style>
+       
+       <style name="soft_img">  
+           <item name="android:layout_width">60dp</item>
+           <item name="android:layout_height">60dp</item>
+           <item name="android:layout_margin">5dp</item>
+       </style>
+       <style name="soft_class_linear">
+           <item name="android:layout_width">fill_parent</item>
+           <item name="android:layout_height">wrap_content</item>
+           <item name="android:orientation">vertical</item>
+       </style>
+       
+       <style name="soft_class_tv">
+           <item name="android:layout_width">fill_parent</item>
+           <item name="android:layout_height">wrap_content</item>
+           <item name="android:textSize">15sp</item>
+           <item name="android:layout_margin">5dp</item>
+           
+      </style>
+      <style name="soft_tv">
+           <item name="android:layout_width">fill_parent</item>
+           <item name="android:layout_height">wrap_content</item>
+           <item name="android:textSize">13sp</item>
+           <item name="android:textColor">#AAAAAA</item>
+           <item name="android:layout_marginRight">4dp</item>
+      </style>
+</resources>
+
+
+
+
+
+
+
+

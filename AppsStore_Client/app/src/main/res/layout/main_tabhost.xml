@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@android:id/tabhost"  >
+    
+ <LinearLayout  
+              android:orientation="vertical"  
+              android:layout_width="fill_parent"  
+              android:layout_height="fill_parent">  
+              <!-- TabWidget的id属性必须为 @android:id/tabs-->              
+              <TabWidget android:id="@android:id/tabs"   
+                android:orientation="horizontal"  
+                android:layout_width="fill_parent"  
+                android:layout_height="wrap_content"
+                android:visibility="gone">  
+              </TabWidget>  
+              <!-- FrameLayout的id属性必须为 @android:id/tabcontent-->  
+               <FrameLayout android:id="@android:id/tabcontent"  
+                    android:layout_width="fill_parent"  
+                    android:layout_height="fill_parent">  
+                       
+              </FrameLayout>  
+ 
+                  
+             
+           
+          </LinearLayout>  
+   
+     <RadioGroup 
+         android:id="@+id/rg_doahang"
+         android:layout_width="fill_parent"
+         android:layout_height="45dp"
+         android:layout_gravity="bottom"
+         android:background="@drawable/maintab_toolbar_bg"
+         android:orientation="horizontal"
+         android:gravity="center"
+         >
+         <RadioButton 
+             android:id="@+id/paihang"
+             android:singleLine="true"
+             android:ellipsize="marquee"
+             style="@style/xhc_radiobutton"
+             android:drawableTop="@drawable/paihang" 
+             android:text="排行"/>
+          <RadioButton 
+             android:id="@+id/software"
+             style="@style/xhc_radiobutton"
+             android:drawableTop="@drawable/paihang" 
+             android:text="软件"/>
+
+            <RadioButton 
+             android:id="@+id/game"
+             style="@style/xhc_radiobutton"
+             android:drawableTop="@drawable/paihang"
+             android:text="游戏"/>
+
+
+         <RadioButton
+
+             android:id="@+id/doweload"
+             style="@style/xhc_radiobutton"
+             android:drawableTop="@drawable/paihang"
+             android:text="下载"/>
+
+         <RadioButton
+
+             android:id="@+id/update"
+             style="@style/xhc_radiobutton"
+             android:drawableTop="@drawable/paihang"
+             android:text="更新"/>
+
+     </RadioGroup>
+</TabHost>

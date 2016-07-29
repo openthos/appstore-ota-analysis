@@ -1,0 +1,120 @@
+-- Merging decision tree log ---
+manifest
+ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:2:1-50:12
+	xmlns:android
+		ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:2:11-69
+	package
+		ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:3:5-44
+		INJECTED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml
+	android:versionCode
+		ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:7:2-80
+	android:name
+		ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:7:19-78
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:8:5-80
+	android:name
+		ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:8:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:9:5-80
+	android:name
+		ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:9:22-77
+uses-permission#android.permission.INTERNET
+ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:11:5-66
+	android:name
+		ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:11:22-64
+uses-sdk
+ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:12:5-14:40
+MERGED from [com.android.support:support-v4:22.2.0] F:\Android\store-beta1.0\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-appindexing:8.1.0] F:\Android\store-beta1.0\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.1.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] F:\Android\store-beta1.0\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:22.2.0] F:\Android\store-beta1.0\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:20:5-43
+	android:targetSdkVersion
+		ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:14:9-37
+		INJECTED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:13:9-34
+		INJECTED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml
+application
+ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:16:5-48:19
+MERGED from [com.android.support:support-v4:22.2.0] F:\Android\store-beta1.0\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-appindexing:8.1.0] F:\Android\store-beta1.0\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.1.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] F:\Android\store-beta1.0\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:22.2.0] F:\Android\store-beta1.0\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:22:5-20
+	android:label
+		ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:20:9-41
+	android:allowBackup
+		ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:18:9-35
+	android:icon
+		ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:19:9-45
+	android:theme
+		ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:21:9-40
+activity#com.example.android_app_stroe.Main_face
+ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:24:9-32:20
+	android:label
+		ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:26:13-45
+	android:name
+		ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:25:13-67
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:27:13-31:29
+action#android.intent.action.MAIN
+ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:28:17-69
+	android:name
+		ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:28:25-66
+category#android.intent.category.LAUNCHER
+ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:30:17-77
+	android:name
+		ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:30:27-74
+activity#com.example.android_app_stroe.MainActivity
+ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:33:9-89
+	android:name
+		ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:33:20-77
+activity#com.example.android_app_stroe.Search
+ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:34:11-85
+	android:name
+		ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:34:22-73
+activity#com.example.android_app_stroe.Game
+ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:36:10-82
+	android:name
+		ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:36:21-70
+activity#com.example.android_app_stroe.SoftWare
+ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:37:12-88
+	android:name
+		ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:37:23-76
+activity#com.example.android_app_stroe.DownLoading
+ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:38:12-91
+	android:name
+		ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:38:23-79
+activity#com.example.android_app_stroe.List_Software
+ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:39:13-94
+	android:name
+		ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:39:24-82
+activity#com.example.android_app_stroe.Update
+ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:40:13-87
+	android:name
+		ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:40:24-75
+activity#com.example.android_app_stroe.Detail_info
+ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:41:14-93
+	android:name
+		ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:41:25-81
+activity#com.example.android_app_stroe.Why_Hate
+ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:42:15-91
+	android:name
+		ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:42:26-79
+meta-data#com.google.android.gms.version
+ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:44:9-46:69
+MERGED from [com.google.android.gms:play-services-basement:8.1.0] F:\Android\store-beta1.0\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\AndroidManifest.xml:21:9-23:69
+	android:name
+		ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:45:13-58
+	android:value
+		ADDED from F:\Android\store-beta1.0\app\src\main\AndroidManifest.xml:46:13-66

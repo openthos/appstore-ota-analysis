@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/comment_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="这是一个测试评论这是一个测试评论这是一个测试评论这是一个测试评论这是一个测试评论这是一个测试评论这是一个测试评论"/>
+    <LinearLayout
+        android:background="#ffff"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/comment_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7:00"
+            />
+      <!--  <TextView
+            android:id="@+id/comment_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bob"
+            android:layout_marginLeft="5dp"/>
+        <TextView
+            android:id="@+id/app_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当年版本"
+            android:layout_marginLeft="10dp"/>-->
+
+    </LinearLayout>
+
+</LinearLayout>

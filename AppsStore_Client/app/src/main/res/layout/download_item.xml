@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal">
+<ImageView
+    android:id="@+id/soft_down_img"
+    android:layout_width="0dp"
+    android:layout_weight="1" 
+    android:layout_height="fill_parent"
+    android:layout_margin="5dp"
+    android:src="@drawable/ic_launcher"
+    
+    />    
+    <LinearLayout
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        >
+        
+        <TextView
+            android:id="@+id/soft_down_name"
+            android:text="帅哥"
+            android:singleLine="true"
+            android:ems="6"
+            android:textSize="18sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            />
+        
+       
+
+             <LinearLayout
+                 android:layout_margin="3dp"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:gravity="right"
+                 android:orientation="horizontal" >
+"
+
+                 <TextView
+                     android:id="@+id/soft_down_daxiao"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="1dp"
+                     android:layout_weight="1"
+                     android:text="4.83m" />
+                 <TextView
+                     android:id="@+id/jindu"
+                     android:layout_weight="1"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginRight="3dp"
+                     android:text="10%"
+                     android:gravity="right" />
+                 <TextView
+                     android:id="@+id/run_sudu"
+                     android:layout_weight="1"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginRight="3dp"
+                     android:text="165k/s"
+                     android:gravity="right" />
+             </LinearLayout>
+
+             <ProgressBar
+                 android:id="@+id/pb_downloading"
+                 android:layout_width="fill_parent"
+                 android:layout_height="2dp"
+                 style="?android:attr/progressBarStyleHorizontal"
+                 
+                 android:max="1000"
+                 
+                 />
+			
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+        
+        <ImageView
+           
+            android:src="@drawable/tab_line"
+            android:layout_width="2dp"
+            android:layout_height="fill_parent"
+            />
+<!--         <ImageView -->
+<!--              android:id="@+id/soft_down_operate" -->
+<!--             android:src="@drawable/ic_launcher" -->
+<!--             android:layout_margin="5dp" -->
+<!--             android:layout_height="fill_parent" -->
+<!--             android:layout_width="fill_parent" -->
+<!--             /> -->
+             <Button
+                 android:id="@+id/soft_down_operate"
+                 android:text="下载"
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"
+                 android:textSize="20sp"
+                 android:gravity="center"
+                 />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+

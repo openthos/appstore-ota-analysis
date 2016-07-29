@@ -1,0 +1,70 @@
+[
+    {
+        "merged": "F:\\Android\\store-beta1.0\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main_tabhost.xml",
+        "source": "F:\\Android\\store-beta1.0\\app\\src\\main\\res\\layout\\main_tabhost.xml"
+    },
+    {
+        "merged": "F:\\Android\\store-beta1.0\\app\\build\\intermediates\\res\\merged\\debug\\layout\\downloading.xml",
+        "source": "F:\\Android\\store-beta1.0\\app\\src\\main\\res\\layout\\downloading.xml"
+    },
+    {
+        "merged": "F:\\Android\\store-beta1.0\\app\\build\\intermediates\\res\\merged\\debug\\layout\\detail_info_comment_item.xml",
+        "source": "F:\\Android\\store-beta1.0\\app\\src\\main\\res\\layout\\detail_info_comment_item.xml"
+    },
+    {
+        "merged": "F:\\Android\\store-beta1.0\\app\\build\\intermediates\\res\\merged\\debug\\layout\\update.xml",
+        "source": "F:\\Android\\store-beta1.0\\app\\src\\main\\res\\layout\\update.xml"
+    },
+    {
+        "merged": "F:\\Android\\store-beta1.0\\app\\build\\intermediates\\res\\merged\\debug\\layout\\user_comment_xml.xml",
+        "source": "F:\\Android\\store-beta1.0\\app\\src\\main\\res\\layout\\user_comment_xml.xml"
+    },
+    {
+        "merged": "F:\\Android\\store-beta1.0\\app\\build\\intermediates\\res\\merged\\debug\\layout\\what_soft_list.xml",
+        "source": "F:\\Android\\store-beta1.0\\app\\src\\main\\res\\layout\\what_soft_list.xml"
+    },
+    {
+        "merged": "F:\\Android\\store-beta1.0\\app\\build\\intermediates\\res\\merged\\debug\\layout\\why_hate.xml",
+        "source": "F:\\Android\\store-beta1.0\\app\\src\\main\\res\\layout\\why_hate.xml"
+    },
+    {
+        "merged": "F:\\Android\\store-beta1.0\\app\\build\\intermediates\\res\\merged\\debug\\layout\\download_item.xml",
+        "source": "F:\\Android\\store-beta1.0\\app\\src\\main\\res\\layout\\download_item.xml"
+    },
+    {
+        "merged": "F:\\Android\\store-beta1.0\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_view_child.xml",
+        "source": "F:\\Android\\store-beta1.0\\app\\src\\main\\res\\layout\\list_view_child.xml"
+    },
+    {
+        "merged": "F:\\Android\\store-beta1.0\\app\\build\\intermediates\\res\\merged\\debug\\layout\\software.xml",
+        "source": "F:\\Android\\store-beta1.0\\app\\src\\main\\res\\layout\\software.xml"
+    },
+    {
+        "merged": "F:\\Android\\store-beta1.0\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "F:\\Android\\store-beta1.0\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "F:\\Android\\store-beta1.0\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_layout.xml",
+        "source": "F:\\Android\\store-beta1.0\\app\\src\\main\\res\\layout\\game_layout.xml"
+    },
+    {
+        "merged": "F:\\Android\\store-beta1.0\\app\\build\\intermediates\\res\\merged\\debug\\layout\\detail_info.xml",
+        "source": "F:\\Android\\store-beta1.0\\app\\src\\main\\res\\layout\\detail_info.xml"
+    },
+    {
+        "merged": "F:\\Android\\store-beta1.0\\app\\build\\intermediates\\res\\merged\\debug\\layout\\test.xml",
+        "source": "F:\\Android\\store-beta1.0\\app\\src\\main\\res\\layout\\test.xml"
+    },
+    {
+        "merged": "F:\\Android\\store-beta1.0\\app\\build\\intermediates\\res\\merged\\debug\\layout\\load.xml",
+        "source": "F:\\Android\\store-beta1.0\\app\\src\\main\\res\\layout\\load.xml"
+    },
+    {
+        "merged": "F:\\Android\\store-beta1.0\\app\\build\\intermediates\\res\\merged\\debug\\layout\\amusement.xml",
+        "source": "F:\\Android\\store-beta1.0\\app\\src\\main\\res\\layout\\amusement.xml"
+    },
+    {
+        "merged": "F:\\Android\\store-beta1.0\\app\\build\\intermediates\\res\\merged\\debug\\layout\\search.xml",
+        "source": "F:\\Android\\store-beta1.0\\app\\src\\main\\res\\layout\\search.xml"
+    }
+]
