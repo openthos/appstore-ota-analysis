@@ -185,104 +185,87 @@ update_to(){
 		dialog --infobox "\n Syncing to disk..." 5 27
 		sync
 		return $result
-	}
+}
+
 do_update()
 
 	#adir=`dirname /mnt/android*/kernel`
-
-																																																																																																																																																																																																	#debug模式下，在根目录创建一个update目录，存放iso解压文件
-																																																																																																																																																																																																	mkdir /update
-																																																																																																																																																																																																	#把update目录挂载成临时文件系统，防止空间不够，加速解压。
-																																																																																																																																																																																																	mount -t tmpfs tmpfs /update
-																																																																																																																																																																																																	cd /update
+	#debug模式下，在根目录创建一个update目录，存放iso解压文件
+	mkdir /update
+	#把update目录挂载成临时文件系统，防止空间不够，加速解压。
+	mount -t tmpfs tmpfs /update
+	cd /update
+	#对iso文件进行挂载函数
+	check_update_root $iso_file
+	#检测是否存在install.img文件并对其解压到根目录
+	if [ -e /update/iso/install.img ];then
+		zcat /update/iso/install.img | ( cd /; cpio -iud > /dev/null )
+		#载入键盘输入模块
+		busybox modprobe atkbd
+	else
+		echo "Cannot find install.img "
+		return 1
+	fi
+	#提示是否进行更新对话框
+	dialog --title " Confirm " --no-label Skip --defaultno --yesno \
+	"\n Do you want to upgrade Android-x86 ?" 7 47
+	
+	if [ $? -ne 0 ]; then
+		return 1
+	fi
 
-																																																																																																																																																																																																	#对iso文件进行挂载函数
-																																																																																																																																																																																																	check_update_root $iso_file
+	#update_hd
+	#命令是否执行成功标记
+	retval=1
+	choice=""
+	#真正进行更新的函数
+	update_to $choice
+	retval=$?
+	#更新失败时的提示
+	if [ $retval -eq 255 ]; then
+		 --title ' Error! ' --yes-label Retry --no-label Reboot \
+		 --yesno '\n Upgrade failed! Please check if you have enough free disk space to upgrade Android-x86.' 8 51
+		 [ $? -eq 1 ] && rebooting
+	fi
+	#检测新系统的kernel是否存在
+	if [ -e /mnt/android*/upgrade/kernel ];then
+		#把update文件保存为更新过的update文件
+		mv $detect_file ${detect_file}.old
+		#重启
+		rebooting
+	fi
 
-																																																																																																																																																																																																	#检测是否存在install.img文件并对其解压到根目录
-																																																																																																																																																																																																	if [ -e /update/iso/install.img ];then
+	return 1;
+}
 
-																																																																																																																																																																																																	zcat /update/iso/install.img | ( cd /; cpio -iud > /dev/null )
+#升级脚本的入口函数，当系统初始化的时候会调用这个入口函数
+update_detect(){	
 
-																																																																																																																																																																																																	#载入键盘输入模块
-																																																																																																																																																																																																	busybox modprobe atkbd
+	#检测是否存在android分区，有必要的检测。因为如果不存在android分区，进行升级是无意义的。
+	if [ !\( mountpoint -q /mnt -a -e /mnt/android*/kernel \) ];then
+		echo "Cannot find Android-x86 partition "
+		return 255
+	fi
+	#获取android系统的根目录
+	adir=`dirname /mnt/android*/kernel`
+	#detect_file="$adir/data/local/update"
+	#定义升级flag文件，用于检测是否存在升级
+	detect_file="$adir/data/media/0/System_OS/update"
+	iso_name=$(tac $detect_file | sed -n 2p )
+	#定义升级包文件
+	iso_file=$(dirname $detect_file)/$iso_name
+	#iso_file="$adir/data/local/android_x86_64_4.4.iso"
+	#检查升级文件update中的flag标记，flag标记为1表示可以进行升级。
+	value=`tail -n 1 $detect_file`
+	if [ "$value"x = "1"x -a -e $iso_file ]; then
+		echo "Update Android-x86 "
+		#有更新的时候进行更新的入口函数
+		do_update
+	fi
+	#flag不为1提示无更新
+	echo "No Update "
 
-																																																																																																																																																																																																	else
-																																																																																																																																																																																																		echo "Cannot find install.img "
-																																																																																																																																																																																																			return 1
-																																																																																																																																																																																																			fi
-																																																																																																																																																																																																				
-																																																																																																																																																																																																					#提示是否进行更新对话框
-																																																																																																																																																																																																						dialog --title " Confirm " --no-label Skip --defaultno --yesno \
-																																																																																																																																																																																																								"\n Do you want to upgrade Android-x86 ?" 7 47
-																																																																																																																																																																																																									if [ $? -ne 0 ]; then
-																																																																																																																																																																																																											return 1
-																																																																																																																																																																																																												fi
-
-																																																																																																																																																																																																												#update_hd
-
-																																																																																																																																																																																																												#命令是否执行成功标记
-																																																																																																																																																																																																												retval=1
-
-																																																																																																																																																																																																												choice=""
-
-																																																																																																																																																																																																												#真正进行更新的函数
-																																																																																																																																																																																																												update_to $choice
-																																																																																																																																																																																																												retval=$?
-
-																																																																																																																																																																																																												#更新失败时的提示
-																																																																																																																																																																																																												if [ $retval -eq 255 ]; then
-																																																																																																																																																																																																												dialog --title ' Error! ' --yes-label Retry --no-label Reboot \
-																																																																																																																																																																																																												--yesno '\n Upgrade failed! Please check if you have enough free disk space to upgrade Android-x86.' 8 51
-																																																																																																																																																																																																												[ $? -eq 1 ] && rebooting
-																																																																																																																																																																																																												fi
-
-																																																																																																																																																																																																												#检测新系统的kernel是否存在
-																																																																																																																																																																																																												if [ -e /mnt/android*/upgrade/kernel ];then
-
-																																																																																																																																																																																																												#把update文件保存为更新过的update文件
-																																																																																																																																																																																																												mv $detect_file ${detect_file}.old
-
-																																																																																																																																																																																																												#重启
-																																																																																																																																																																																																												rebooting
-																																																																																																																																																																																																												fi
-
-																																																																																																																																																																																																												return 1;
-
-																																																																																																																																																																																																												}
-
-																																																																																																																																																																																																												#升级脚本的入口函数，当系统初始化的时候会调用这个入口函数
-																																																																																																																																																																																																												update_detect()
-																																																																																																																																																																																																												{		
-																																																																																																																																																																																																													
-																																																																																																																																																																																																														#检测是否存在android分区，有必要的检测。因为如果不存在android分区，进行升级是无意义的。
-																																																																																																																																																																																																															if [ !\( mountpoint -q /mnt -a -e /mnt/android*/kernel \) ];then
-																																																																																																																																																																																																																	echo "Cannot find Android-x86 partition "
-
-																																																																																																																																																																																																																			return 255
-																																																																																																																																																																																																																				fi
-																																																																																																																																																																																																																					#获取android系统的根目录
-																																																																																																																																																																																																																						adir=`dirname /mnt/android*/kernel`
-
-																																																																																																																																																																																																																							#detect_file="$adir/data/local/update"
-																																																																																																																																																																																																																								#定义升级flag文件，用于检测是否存在升级
-																																																																																																																																																																																																																									detect_file="$adir/data/media/0/System_OS/update"
-
-																																																																																																																																																																																																																										iso_name=$(tac $detect_file | sed -n 2p )
-																																																																																																																																																																																																																											#定义升级包文件
-																																																																																																																																																																																																																												iso_file=$(dirname $detect_file)/$iso_name
-																																																																																																																																																																																																																													#iso_file="$adir/data/local/android_x86_64_4.4.iso"
-																																																																																																																																																																																																																														#检查升级文件update中的flag标记，flag标记为1表示可以进行升级。
-																																																																																																																																																																																																																															value=`tail -n 1 $detect_file`
-																																																																																																																																																																																																																																if [ "$value"x = "1"x -a -e $iso_file ]; then
-																																																																																																																																																																																																																																	echo "Update Android-x86 "
-																																																																																																																																																																																																																																		#有更新的时候进行更新的入口函数
-																																																																																																																																																																																																																																			do_update
-																																																																																																																																																																																																																																				fi
-																																																																																																																																																																																																																																					#flag不为1提示无更新
-																																																																																																																																																																																																																																						echo "No Update "
-
-																																																																																																																																																																																																																																						}
+}
 
 																																																																																																																																																																																																																														
 
