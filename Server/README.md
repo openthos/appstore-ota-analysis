@@ -134,9 +134,9 @@ CREATE TABLE `updatesystem` (
 
 **四，代码结构**
 
-![CodeStruct](https://github.com/openthos/customized-android-analysis/blob/master/AppStoreServer/pic/code1.png?raw=true)
+![CodeStruct](https://github.com/openthos/appstore-ota-analysis/blob/master/Server/pic/code1.png)
 
-![CodeStruct](https://github.com/openthos/customized-android-analysis/blob/master/AppStoreServer/pic/code2.png?raw=true)
+![CodeStruct](https://github.com/openthos/appstore-ota-analysis/blob/master/Server/pic/code2.png)
 
 ```
 代码分为四个部分：
