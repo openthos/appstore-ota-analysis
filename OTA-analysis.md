@@ -12,6 +12,7 @@
 于鹏: OTA的app实现(完成ota下载)
 
 # 功能需求
+## 基本功能
 ### OTA app界面的基本元素
         当前版本的文字标识  标有系统版本号和下载按钮的各个条目
 ### OTA app界面的基本操作
@@ -21,6 +22,7 @@
 
 ### [newinstaller with OTA功能描述](https://github.com/openthos/newinstaller_analysis/blob/master/docs/summary.md)
 
+## 详细操作
 ### OTA app界面基本操作详细说明
 |元素|操作|描述|
 |---|---|---|
@@ -32,6 +34,7 @@
 
 ### [newinstaller with OTA操作说明](https://github.com/openthos/newinstaller_analysis/blob/master/docs/summary.md)
 
+## 接口说明
 ### [OTA app与 newinstaller的接口说明](https://github.com/openthos/newinstaller_analysis/blob/master/docs/summary.md)
 
 
