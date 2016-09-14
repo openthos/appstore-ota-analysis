@@ -1,5 +1,6 @@
 #OTA flowchat
 ![image](./image/OTA.png)
+
 已经完成了  
 - 安装完第一次启动
 - 自动启动OTA app
