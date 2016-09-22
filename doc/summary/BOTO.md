@@ -1,15 +1,15 @@
 # BOTO Install and OTA info
 ## Compile
-I add 2 compile choice:
+I add 2 compile choice(BOTO专用的编译选项):
 ```
-oto_img  #BOTO Image:Conclude data.img(preinstall app)
-make oto_img
-update_zip #(OTA update package)
+oto_img                #BOTO Image:Conclude data.img(preinstall app)
+update_zip             #(OTA update package)
 ```
 ##How to add new preinstall app
-```
+
 1.chaneg app's name
 把下面代码保存到和app同级的目录下，并且增加可执行权限:chmod +x 文件名
+```
 #!/bin/sh
 for apk in `ls *.apk`
 do 
@@ -25,16 +25,17 @@ do
         mv $apk ../convert/$packagename/"$packagename".apk
     fi
 done
-2.copy app's dir to code,path is like the following:
-[packages/apps/ExternalAPP/$packagename/"$packagename".apk]
-3.rm out/target/product/x86_64/data.img
-4.Compile
-APP is included in android_x86_64_oto.img
 ```
+2.copy app's dir to code,path is like the following:  
+[packages/apps/ExternalAPP/$packagename/"$packagename".apk]  
+3.rm out/target/product/x86_64/data.img  
+4.Compile  
+APP is included in android_x86_64_oto.img  
+
 ##How to update via OTA
+make update_zip                #制作更新包          
+you should check the 'update.list' and 'version' file               #更新之前会有一些更新相关信息,可以放在这两个文件中
 ```
-1.make update_zip
-you should check the 'update.list' and 'version' file
 cat bootable/newinstaller/otoinit/update.list
 kernel
 initrd.img
@@ -49,11 +50,13 @@ Bugfix:                #fix bug
 Cust:                  #different with Android-x86
 ```
 ##OTA server work
+OTA服务器上应该有更新包和version文件
 ```
 1.put the update zip into server
 2.put the 'version' file with update zip
 ```
 ##OTA via APP
+通过OTA app来进行update之前的准备工作
 ```
 1.APP should get the current OS's version
 Chenwei should provide the 'version' file to APP,APP read the specific file
