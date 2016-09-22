@@ -57,15 +57,18 @@ OTA服务器上应该有更新包和version文件
 ```
 ##OTA via APP
 通过OTA app来进行update之前的准备工作
-```
+
 1.APP should get the current OS's version
-Chenwei should provide the 'version' file to APP,APP read the specific file
-2.APP Compare server's newest version with the current version
-you can download the OTA server's 'version' file and compare with local 'version' file
+Chenwei should provide the 'version' file to APP,APP read the specific file  
+2.APP Compare server's newest version with the current version  
+you can download the OTA server's 'version' file and compare with local 'version' file  
 3.download the update zip and put in the following path:
+```
 /data/media/0/System_OS/
 update_zip
+```
 4.you must provide a flag which we can decide wether update
+```
 cat /data/media/0/System_OS/update
 openthos_V1.0.zip      #update zip name
 1                      #need update(maybe you should ask user,then set the flag)
