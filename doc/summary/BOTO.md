@@ -30,6 +30,7 @@ done
 [packages/apps/ExternalAPP/$packagename/"$packagename".apk]  
 3.rm out/target/product/x86_64/data.img  
 4.Compile  
+make -j16 oto_img
 APP is included in android_x86_64_oto.img  
 
 ##How to update via OTA
