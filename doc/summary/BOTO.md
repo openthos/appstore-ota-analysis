@@ -29,7 +29,7 @@ done
 2.copy app's dir to code,path is like the following:  
 [packages/apps/ExternalAPP/$packagename/"$packagename".apk]  
 3.rm out/target/product/x86_64/data.img  
-4.Compile  
+4.Compile  <br>
 make -j16 oto_img
 APP is included in android_x86_64_oto.img  
 
