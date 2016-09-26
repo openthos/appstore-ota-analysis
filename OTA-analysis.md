@@ -15,6 +15,8 @@
 
 # 功能需求
 ## 基本功能
+### 基本流程图
+![流程图](https://github.com/openthos/newinstaller_analysis/raw/master/docs/update%20apk%E6%B5%81%E7%A8%8B%E5%9B%BE.png)
 ### OTA app界面的基本元素
          有无系统可更新的提示、进度条、Md5校验文件是否正确的提示、Md5校验文件正确后显示“安装更新并重启的按钮”
 ### OTA app界面的基本操作
