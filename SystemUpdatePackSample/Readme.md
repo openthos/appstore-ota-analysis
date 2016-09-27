@@ -34,7 +34,10 @@ Version字段描述了升级包的版本号，ReleaseNote及ReleaseNote分别代
 MD5 (update.zip) = 2271ee49332f62c71cafe633af33b48a
 ```
 # 升级方法
-1. 用户打开“检查更新”程序后，先从服务器（测试阶段为192.168.0.180）获取oto_ota.ver文件
+1. 用户打开“检查更新”程序后，先从服务器（测试阶段为192.168.0.180）获取oto_ota.ver文件. 参考linux命令如下
+```
+wget http://192.168.0.180/openthos/oto_ota.ver
+```
 2. 当oto_ota.ver字段标明的版本高于本地版本后，提示有更新可用
 3. 当用户点击“更新说明”时，下载并显示更新说明
 4. 当用户点击“立即更新”后，开始下载udpate.zip及update.zip.md5
