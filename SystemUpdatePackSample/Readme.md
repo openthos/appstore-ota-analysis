@@ -33,3 +33,13 @@ Version字段描述了升级包的版本号，ReleaseNote及ReleaseNote分别代
 ```
 MD5 (update.zip) = 2271ee49332f62c71cafe633af33b48a
 ```
+# 升级方法
+1. 用户打开“检查更新”程序后，先从服务器（测试阶段为192.168.0.180）获取oto_ota.ver文件
+2. 当oto_ota.ver字段标明的版本高于本地版本后，提示有更新可用
+3. 当用户点击“更新说明”时，下载并显示更新说明
+4. 当用户点击“立即更新”后，开始下载udpate.zip及update.zip.md5
+5. 对update.zip进行md5校验，如果校验通过写入/data/media/0/System_Os/update,其末两行分别为升级包文件名update.zip和１
+```
+update.zip
+1
+```
