@@ -2,8 +2,8 @@
 ## oto_ota.ver
 此文件名固定，内容如下
 ```
-Version=1.8.7
-ReleaseNote=ReleaseNotes1_8_7.md
+Version=1.8.８
+ReleaseNote=ReleaseNotes1_8_８.md
 FileName=update.zip
 ```
 Version字段描述了升级包的版本号，ReleaseNote及ReleaseNote分别代表要求下载的*“更新说明”*文件及*“升级包”*文件的文件名。
