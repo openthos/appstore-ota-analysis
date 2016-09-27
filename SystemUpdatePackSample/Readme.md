@@ -3,12 +3,12 @@
 此文件名固定，内容如下
 ```
 Version=1.8.7
-ReleaseNote=ReleaseNote1_8_7.md
+ReleaseNote=ReleaseNotes1_8_7.md
 FileName=update.zip
 ```
 Version字段描述了升级包的版本号，ReleaseNote及ReleaseNote分别代表要求下载的*“更新说明”*文件及*“升级包”*文件的文件名。
 ## ReleaseNotes1_8_8.md
-当用户点击*“更新说明”*将显示本文件的内容，其标记语言为markdown
+当用户点击*“更新说明”*将显示本文件的内容，其名称由oto_ota.ver文件ReleaseNote字段指定，其内容标记语言为markdown
 ```markdown
 # <font color=orange> OUTI 1.8.8(稳定版)更新说明 </font>
 
