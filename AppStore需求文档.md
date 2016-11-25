@@ -38,3 +38,7 @@ AppStore由四个主界面构成，分别是首页，软件，游戏，管理。
 
 ## 项目进展
 [项目进展](https://github.com/openthos/appstore-ota-analysis/blob/master/AppStore%E9%A1%B9%E7%9B%AE%E8%BF%9B%E5%B1%95.md)
+
+## 使用说明
+[使用说明](https://github.com/openthos/appstore-ota-analysis/blob/master/AppStore%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.md)
+
