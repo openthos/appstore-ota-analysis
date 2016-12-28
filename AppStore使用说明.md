@@ -1,10 +1,15 @@
 # AppStore使用说明书
 ## AppStore功能
-  - 查找App
-  - 下载App
-  - 应用管理 
+  
+  - 查找App
+  
+  - 下载App
+  
+  - 应用管理 
+
 ## 操作说明
-  - 回退    （返回历史加载过的界面）
+  
+  - 回退    （返回历史加载过的界面）
   
   - 首页    (按指定的条件展示软件。每一个条件下按游戏和软件分别展示)
 	- 编辑推荐    (自定义展示)
@@ -16,11 +21,13 @@
  ![](https://github.com/openthos/appstore-ota-analysis/blob/master/pic/home.png)	
 
   - 软件    (展示属于非游戏类的软件，并且有分类)
-      - 右侧显示非游戏软件的分类，分别是全部，影音娱乐，实用工具，社交通讯，学习办公和网络生活，点击相应分类可以展示该类别软件。
-      ![](https://github.com/openthos/appstore-ota-analysis/blob/master/pic/software.png)
+      
+      - 右侧显示非游戏软件的分类，分别是全部，影音娱乐，实用工具，社交通讯，学习办公和网络生活，点击相应分类可以展示该类别软件。
+  ![](https://github.com/openthos/appstore-ota-analysis/blob/master/pic/software.png)
  
   - 游戏    (展示属于游戏类的软件，并且有分类)
-       - 右侧显示游戏类软件分类，分别是全部，休闲益智和经营策略，点击相应分类可查看该类别软件。 
+      
+      - 右侧显示游戏类软件分类，分别是全部，休闲益智和经营策略，点击相应分类可查看该类别软件。 
   ![](https://github.com/openthos/appstore-ota-analysis/blob/master/pic/game.png)
  
   - 管理    (无点击事件，查看软件的下载情况)
