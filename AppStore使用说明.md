@@ -7,12 +7,19 @@
 	- 最受好评    (按评分展示)
 	- more      (点击可以查看更多软件内容)
 	
+ ![](https://github.com/openthos/appstore-ota-analysis/blob/master/pic/home.png)	
+
   - 软件    (展示属于非游戏类的软件，并且有分类)
        - 目前用于展示所有软件， 点击软件网格表界面右上角的more，将会弹出所有软件页面
-	
-  - 游戏    (展示属于游戏类的软件，并且有分类)
+       
+  ![](https://github.com/openthos/appstore-ota-analysis/blob/master/pic/software.png)
+ 
+  - 游戏    (展示属于游戏类的软件，并且有分类)
        - 目前用于展示所有软件， 点击软件网格表界面右上角的more，将会弹出所有软件页面
-  - 管理    (无点击事件，查看软件的下载情况)
+       
+  ![](https://github.com/openthos/appstore-ota-analysis/blob/master/pic/game.png)
+ 
+  - 管理    (无点击事件，查看软件的下载情况)
        - 更新    (本机已经安装的软件)
      		点击内容项会弹出卸载选项，点击可进入卸载页面
 		
@@ -22,5 +29,11 @@
         	移除任务    (移除当前下载项)
 	
        - 开始所有  （异常处理，如果下载中断，点击可以重新下载）
-     
-  - 首页，软件，游戏这三个页面中点击单个软件可进入软件详情，查看软件的具体信息（暂未有实际数据，该页面内容暂不可操作）
+       
+ ![](https://github.com/openthos/appstore-ota-analysis/blob/master/pic/manager.png)
+ 
+  - 搜索
+  
+  ![](https://github.com/openthos/appstore-ota-analysis/blob/master/pic/search.png)
+ 
+  - 首页，软件，游戏这三个页面中点击单个软件可进入软件详情，查看软件的具体信息（暂未有实际数据，该页面内容暂不可操作）
