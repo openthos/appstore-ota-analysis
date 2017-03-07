@@ -50,7 +50,6 @@
 
   - 软件    (展示属于非游戏类的软件，并且有分类)
   ![](https://github.com/openthos/appstore-ota-analysis/blob/master/pic/software.png)   
-  
     - 右侧显示非游戏软件的分类，分别是全部，影音娱乐，实用工具，社交通讯，学习办公和网络生活，点击相应分类可以展示该类别软件。
   
   
