@@ -61,7 +61,8 @@
   
   
   - 管理    (无点击事件，查看软件的下载情况)
-       
+  ![](https://github.com/openthos/appstore-ota-analysis/blob/master/pic/manager.png)  
+  
     - 更新    (本机已经安装的软件)
       - 点击内容项会弹出应用信息框，可进行卸载，清除缓存等操作。
       - 更新所有  {更新所有需要更新的软件}
@@ -73,8 +74,9 @@
       - 开始所有  {开始或暂停所有软件）
       - 下载中显示下载的基本信息，右侧的按钮可以控制暂停和继续
        
- ![](https://github.com/openthos/appstore-ota-analysis/blob/master/pic/manager.png)
  
-  - 搜索
-按关键字搜索所需应用
-  ![](https://github.com/openthos/appstore-ota-analysis/blob/master/pic/search.png)
+ 
+  - 搜索  
+  ![](https://github.com/openthos/appstore-ota-analysis/blob/master/pic/search.png)
+  按关键字搜索所需应用
+
