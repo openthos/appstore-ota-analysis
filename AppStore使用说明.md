@@ -13,3 +13,5 @@
 - [查看详情](https://github.com/openthos/appstore-ota-analysis/blob/master/user-instruct/%E6%9F%A5%E7%9C%8B%E8%AF%A6%E6%83%85.md)
 
 ### 可能问题
+- 第一次下载安装应用的时候需要选择允许安装未知来源
+- 如果appstore打不开清空缓存试一试
