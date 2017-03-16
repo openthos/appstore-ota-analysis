@@ -5,7 +5,7 @@
 
 ### 框架结构
 
-- [主体结构]("../design_document/%E4%B8%BB%E4%BD%93%E7%BB%93%E6%9E%84.md")
+- [主体结构]("https://github.com/openthos/appstore-ota-analysis/blob/master/design_document/主体结构.md")
 
 ### 主要功能点实现
 - [页面回退]("")
