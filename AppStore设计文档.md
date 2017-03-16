@@ -8,7 +8,7 @@
 - [主体结构](https://github.com/openthos/appstore-ota-analysis/blob/master/design_document/主体结构.md)
 
 ### 主要功能点实现
-- [页面回退](。。/design_document/页面回退.md)
+- [页面回退](../design_document/页面回退.md)
 
 - [更新实现]("")
 
