@@ -37,7 +37,7 @@ AppStore由四个主界面构成，分别是首页，软件，游戏，管理。
 应用详情，包括下载和当前下载进度状态，如果已安装，则显示启动和卸载的选项
 
 ## 设计文档
-[项目进展](https://github.com/openthos/appstore-ota-analysis/blob/master/AppStore%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3.md)
+[设计文档](https://github.com/openthos/appstore-ota-analysis/blob/master/AppStore%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3.md)
 
 ## 项目进展
 [项目进展](https://github.com/openthos/appstore-ota-analysis/blob/master/AppStore%E9%A1%B9%E7%9B%AE%E8%BF%9B%E5%B1%95.md)
