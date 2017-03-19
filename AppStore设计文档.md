@@ -5,7 +5,7 @@
 
 ### 框架结构
 
-- [主体结构](https://github.com/openthos/appstore-ota-analysis/blob/master/design_document/主体结构.md)
+- [代码结构](https://github.com/openthos/appstore-ota-analysis/blob/master/design_document/主体结构.md)
 - [主体结构](https://github.com/openthos/appstore-ota-analysis/blob/master/design_document/主体结构.md)
 
 ### 主要功能点实现
