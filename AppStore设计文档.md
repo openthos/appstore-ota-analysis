@@ -21,6 +21,4 @@
 
 - [多线程后台下载](https://github.com/openthos/appstore-ota-analysis/blob/master/design_document/多线程后台下载.md)
 
-- [应用的安装，卸载，以及监听](https://github.com/openthos/appstore-ota-analysis/blob/master/design_document/应用的安装，卸载，以及监听.md)
-
 
