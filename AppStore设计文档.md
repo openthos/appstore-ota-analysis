@@ -15,8 +15,6 @@
 
 - [应用操作](https://github.com/openthos/appstore-ota-analysis/blob/master/design_document/应用操作.md)
 
-- [进度条刷新](https://github.com/openthos/appstore-ota-analysis/blob/master/design_document/进度条刷新.md)
-
 - [首页轮播图加载](https://github.com/openthos/appstore-ota-analysis/blob/master/design_document/首页轮播图加载.md)
 
 - [搜索功能的实现](https://github.com/openthos/appstore-ota-analysis/blob/master/design_document/搜索功能的实现.md)
